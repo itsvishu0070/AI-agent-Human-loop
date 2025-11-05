@@ -1,0 +1,81 @@
+.request-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.request-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.request-details {
+    padding: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.request-details p {
+    margin: 0 0 0.75rem 0;
+    color: #333;
+}
+
+.request-details p strong {
+    color: #000;
+    min-width: 120px;
+    display: inline-block;
+}
+
+.answer-form {
+    padding: 1.5rem;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-form textarea {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    resize: vertical;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    /* Important for padding to work with 100% width */
+}
+
+.answer-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.2s;
+}
+
+.answer-form button:hover {
+    background-color: #0056b3;
+}
+
+.answer-form button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #d9534f;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
